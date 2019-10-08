@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String KEY_ENTER = "ENTER";
     private static final String KEY_LOCATION = "LOCATION";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
