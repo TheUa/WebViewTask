@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WebViewTask</string>
+    <string name="loading_video">Loading…</string>
+    <string name="link_www">Ссылка</string>
+    <string name="http">Введите полный адрес с http://</string>
+    <string name="try_button">Enter</string>
+    <string name="youtube">Пробовать youtube</string>
+    <string name="location">Страна:</string>
+</resources>
