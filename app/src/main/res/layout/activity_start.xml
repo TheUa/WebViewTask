@@ -60,4 +60,14 @@
         android:layout_margin="16dp"
         android:text="@string/youtube" />
 
+    <Button
+        android:id="@+id/pornhub_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/youtube_button"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="@string/porhhub" />
+
+
 </RelativeLayout>

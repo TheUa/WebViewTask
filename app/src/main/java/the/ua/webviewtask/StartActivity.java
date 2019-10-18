@@ -26,6 +26,7 @@ public class StartActivity extends AppCompatActivity {
     EditText link;
     Button enter;
     Button youtube;
+    Button porn;
     private static final String KEY_ENTER = "ENTER";
     private static final String KEY_LOCATION = "LOCATION";
 
@@ -38,6 +39,7 @@ public class StartActivity extends AppCompatActivity {
         enter = findViewById(R.id.link_button);
         youtube = findViewById(R.id.youtube_button);
         location = findViewById(R.id.location);
+        porn = findViewById(R.id.pornhub_button);
 
         IpTest ipTest = new IpTest();
         ipTest.execute();
@@ -60,6 +62,16 @@ public class StartActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(StartActivity.this, MainActivity.class);
                 intent.putExtra(KEY_ENTER, "http://m.youtube.com");
+                intent.putExtra(KEY_LOCATION, location.getText().toString());
+                startActivity(intent);
+            }
+        });
+
+        porn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StartActivity.this, MainActivity.class);
+                intent.putExtra(KEY_ENTER, "https://rt.pornhub.com/");
                 intent.putExtra(KEY_LOCATION, location.getText().toString());
                 startActivity(intent);
             }
